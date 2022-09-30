@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+import java.lang.reflect.Array;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,6 +16,11 @@ public class Aditya {
     static int a;//0
     static String b;//null
     int c;//0
+//static method it is exicut before the main method at the time of classloading
+// Without using main method static method exicuter
+//    static {
+//        System.out.println("aditya");
+//    }
 
     public static void main(String[] args) {
 //        System.out.println(a);
@@ -32,6 +38,7 @@ public class Aditya {
             System.out.println("not right age");
         }
          */
+
         /*
         boolean x = true;
         boolean y = false;
@@ -41,6 +48,7 @@ public class Aditya {
             System.out.println("condition is false");
         }
          */
+
         /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a num");
@@ -51,6 +59,7 @@ public class Aditya {
             i++;
         }
          */
+
         /*
         //5 table print
         Scanner sc = new Scanner(System.in);
@@ -87,6 +96,7 @@ public class Aditya {
             System.out.println("Not a number");
         }
          */
+
         /*
         //Switch Case Using number
         Scanner sc = new Scanner(System.in);
@@ -105,7 +115,6 @@ public class Aditya {
             default:
                 System.out.println("Not Number");
         }
-
          */
 
         /*
@@ -125,6 +134,7 @@ public class Aditya {
                 System.out.println("Not Name");
         }
          */
+
         /*
         //Prime number or not
         int i,m,flag=0;
@@ -145,6 +155,7 @@ public class Aditya {
             }
         }
          */
+
         /*
         //1 to 10 pring using break 5 apply iteration stop
         //1 to 10 print using continue apply skip code specific condition of code
@@ -184,6 +195,7 @@ public class Aditya {
             System.out.print(" " + c);
         }
          */
+
         /*
         //Swap Two Number Without use Third Variable
         int a = 10,b = 20;
@@ -194,6 +206,7 @@ public class Aditya {
         System.out.println(a);
         System.out.println(b);
         */
+
         /*
         //Swap Two Number Using Third Variable
         int a = 10,b = 20,c;
@@ -241,8 +254,16 @@ public class Aditya {
         System.out.println("====================");
         System.out.println(str3.replaceAll("\\s",""));
         System.out.println("====================");
+        //Two string Join
         System.out.println(str4.concat(str5));
-        */
+        System.out.println("===============");
+        //Reverse String Print
+        for (int i = str5.length()-1;i>=0;i--){
+            System.out.print(str5.charAt(i));
+        }
+
+         */
+
         /*
         //Method OverLoading
         method();
@@ -264,6 +285,7 @@ public class Aditya {
             i++;
         }
          */
+
         /*
         //Method OverLoading
         method(1,10);
@@ -296,6 +318,7 @@ public class Aditya {
         return length * width;
     }
          */
+
         /*
         //Leap Year or Not program
         Scanner sc = new Scanner(System.in);
@@ -309,6 +332,7 @@ public class Aditya {
             System.out.println("Not a leap year");
         }
         */
+
         /*
         //Even or odd integers
         Scanner sc = new Scanner(System.in);
@@ -320,6 +344,7 @@ public class Aditya {
             System.out.println("odd");
         }
          */
+
         /*
         //Largest among 3 Numbers
         int a = 40,b = 20,c = 30;
@@ -331,6 +356,7 @@ public class Aditya {
             System.out.println("c is greater");
         }
          */
+
         /*
         //Factorial NUmber
         int i, fact = 1;
@@ -338,6 +364,7 @@ public class Aditya {
             fact = fact * i;
         System.out.println(fact);
          */
+
         /*
         //display all prime numbers from 1 to N
         int i;
@@ -357,6 +384,7 @@ public class Aditya {
             }
         }
          */
+
         /*
         //Display Vowels or not
         Scanner sc = new Scanner(System.in);
@@ -379,6 +407,7 @@ public class Aditya {
                 System.out.println("Non Vowel");
         }
          */
+
         /*
         //if-else-if ladder use to vowels or not
         Scanner sc = new Scanner(System.in);
@@ -399,6 +428,7 @@ public class Aditya {
             System.out.println("Not Vowels");
         }
          */
+
         /*
         //Armstrong number or not
      int num = 153,number,temp,total = 0;
@@ -414,6 +444,7 @@ public class Aditya {
          System.out.println("Not Armstong Number ");
      }
          */
+
         /*
         //Star pattern program
         for (int i = 1; i <= 5; i++) {
@@ -424,6 +455,7 @@ public class Aditya {
             }
         }
          */
+
         /*
         //output of program
 //        5
@@ -439,6 +471,7 @@ public class Aditya {
             }
         }
          */
+
         /*
         //Pattern Problem
         int i, j;
@@ -454,6 +487,7 @@ public class Aditya {
             // System.out.println(" ");
         }
          */
+
         /*
         //Single Dimentional Array
         int[] Arrays = {1, 2, 3, 4, 5, 6, 7, 8};
@@ -472,6 +506,7 @@ public class Aditya {
             System.out.println(a);
         }
          */
+
         /*
         //Muli Dimentional Array
         int[][] multiDimen = {{1,2,3}, {4,5,6}, {7,8,9}};
@@ -483,6 +518,7 @@ public class Aditya {
             System.out.println();
         }
         */
+
         /*
         //Reverse number print using for loop
         int num = 123, i = 0;
@@ -493,6 +529,7 @@ public class Aditya {
         }
         System.out.println(i);
          */
+
         /*
         //Reverse Number Print using While loop
         int num = 123,i = 0;
@@ -503,6 +540,7 @@ public class Aditya {
         }
         System.out.println(i);
          */
+
         /*
         //Palindrome Number or Not
         int num = 121, i = 0,temp;
@@ -518,14 +556,19 @@ public class Aditya {
             System.out.println("Not Palindrome Number");
         }
          */
+
         /*
         //Sum of n natural number
-        int num = 5, sum = 0, i;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num = sc.nextInt();
+        int sum = 0, i;
         for (i = 1; i <= num; i++) {
             sum = sum + i;
         }
         System.out.println(sum);
-        */
+         */
+
         /*
         //While loop to Print table
         int a = 1,num = 2;
@@ -534,6 +577,7 @@ public class Aditya {
             a++;
         }
          */
+
         /*
         //Using Arrray Table Print using for Each Loop
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -545,6 +589,36 @@ public class Aditya {
             System.out.println(i);
         }
          */
+
+        /*
+        //Addition N natural number user through input
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a size of array");
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        int sum = 0;
+        System.out.println("Enter a element");
+        for (int i = 0; i < size; i++) {
+            arr[i]= sc.nextInt();
+        }
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        System.out.println(sum);
+        */
+
+        /*
+        //ADDITION of element
+        int i, sum = 0;
+        int arr[] = {10, 20, 30, 40, 50};
+        for (i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        System.out.println(sum);
+
+         */
+
+
          /*
         //multi Dimentional Array Table Print
         int[][] multiDimen = {{1,2,3},{4,5,6},{7,8,9}};
@@ -556,7 +630,169 @@ public class Aditya {
             }
             System.out.println();
         }
+         */
+
+         /*
+        //Index Position Print
+        int[] arr = {1,2,3,4,10,6,7,8,9,10};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a no");
+        int a = sc.nextInt();
+        for (int i = 0;i < arr.length;i++){
+            if (a == i ) {
+                System.out.println("Index " + a + " = " + arr[a]);
+            }
+        }
+         */
+
+        /*
+        //Position of index 9 no index 4
+        int num[] = {4, 6, 3, 8, 9, 6};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a element");
+        int element = sc.nextInt();
+        int index = -1;
+        int i = 0;
+        while (i < num.length){
+            if (num[i] == element){
+                index = i;
+                break;
+            }
+            i++;
+        }
+        System.out.println("Index of "+element +" is: "+index);
+         */
+
+        /*
+        //Maximum Element is print
+        int a[] = {4, 7, 3, 9, 5, 8};
+        int max = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (max < a[i]) {
+                max = a[i];
+            }
+        }
+        System.out.println("Maximum Element is " + max);
+         */
+
+        /*
+        //Reverse Array Print
+        int arr[] = {10, 20, 30, 40};
+        for (int i = 0; i < arr.length ; i++ ) {
+        }
+        for (int i = arr.length-1;i>=0;i--){
+            System.out.print(arr[i]);
+        }
+         */
+
+        /*
+        //Second last element print
+        int arr[]={10,50,60,40,70};
+        Arrays.sort(arr);
+        System.out.println(arr[arr.length-2]);
+        */
+
+        /*
+        //Second smallest element print
+        int arr[] = {10, 50, 60, 40, 70};
+            Arrays.sort(arr);
+        System.out.println(arr[1]);
+        */
+
+        /*
+        //Second last element print & Second Smallest element print
+        int arr[] = {10, 50, 60, 40};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        System.out.println("second largest " + arr[1]);
+        System.out.println("second smallest "+arr[arr.length-2]);
+         */
+
+        /*
+        //Array even odd print
+        int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("even");
+        for (int i = 0; i <= arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                System.out.print(arr[i]);
+            }
+        }
+        System.out.println("odd");
+        for (int a = 0; a <= arr.length; a++) {
+            if (arr[a] % 2 != 0) {
+                System.out.print(arr[a]);
+
+            }
+        }
+         */
+        
+        /*
+        //Sorting element in java
+        int arr[] = {10, 30, 20, 50, 40};
+        int temp = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i]);
+        }
+
           */
+
+        /*
+        //Largest Element Print
+        int arr[] = {1, 2, 10, 4, 5};
+        int largest = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+           if (largest<arr[i]){
+               largest = arr[i];
+           }
+        }
+        System.out.println(largest);
+         */
+
+        /*
+        //Duplicate Element Print
+        int arr[] = {1, 2, 3, 4, 5, 6, 6, 3, 2, 1};
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[i]==arr[j]){
+
+                    System.out.println(arr[j]);
+                }
+            }
+        }
+         */
+
+         /*
+        //Copy All Elements of one array into another array
+        int a[]={10,20,30,40};
+        int b[]=new int[a.length];
+        for (int i=0;i< a.length;i++){
+            b[i]=a[i];
+        }
+        System.out.println("Display Element");
+        for (int i=0;i < a.length;i++){
+            System.out.println(a[i]+" ");
+        }
+        System.out.println("Copy element print");
+        for (int i=0;i<b[i];i++){
+            System.out.println(b[i]+" ");
+        }
+         */
         /*
         //Array using multi dimentional
         int[][] twoDimen = new int[3][3];
@@ -575,6 +811,7 @@ public class Aditya {
         }
         System.out.println();
          */
+
         /*
         //Array List Print Using For Loop,While Loop(Iterato),For Each Loop
         List<Integer> arrayList = new ArrayList<>();
@@ -595,6 +832,7 @@ public class Aditya {
             System.out.println(i);
         }
          */
+
         /*
         //Array List for Loop Use
         List<Integer> arrayList = new ArrayList<>(5);
@@ -606,6 +844,7 @@ public class Aditya {
         arrayList.remove(3);
         System.out.println(arrayList);
          */
+
          /*
         //Using Set in Java Repeated Data Not Display
         Set<String> data = new LinkedHashSet<>();
@@ -621,7 +860,8 @@ public class Aditya {
         while (itr.hasNext()){
             System.out.println(itr.next());
         }
-          */
+         */
+
         /*
         List<String> arrayList = new ArrayList<>();
         arrayList.add("adi");
@@ -636,6 +876,7 @@ public class Aditya {
             System.out.print(i);
         }
         */
+
         /*
         String s1 = "HELLO";
         String s2 = "HELLO";
@@ -669,6 +910,8 @@ public class Aditya {
             }
         }
          */
+
+        /*
         List<String> obj = new LinkedList<>();
         obj.add("Aditya");
         obj.add("kash");
@@ -699,8 +942,71 @@ public class Aditya {
         Collections.reverse(obj);
         System.out.println(obj);
         System.out.println("============");
+         */
+
+
+        /*
+        //String element 
+        String str = "Aditya";
+        int i;
+        for (i = str.length();i > 0;i-- ){
+            System.out.print(str.charAt(i-1));
+        }
+         */
+
+        /*
+        HashMap<String, Integer> value = new HashMap<>();
+        value.put("Aditya", 1);
+        value.put("Sanket", 2);
+        value.put("Sanket", 3);
+        value.put("Suraj",7);
+        value.put("Aniket", 5);
+        value.remove("Aniket");
+        System.out.println(value);
+        value.put("Aditya", 50);
+        System.out.println(value);
+
+        Iterator itr = value.entrySet().iterator();
+        while (itr.hasNext()){
+            System.out.println(itr.next());
+        }
+
+        for (Map.Entry m : value.entrySet()) {
+            System.out.println(m.getKey() + " " + m.getValue());
+        }
+         */
+
+         /*
+        //Check Palandrom no or not and reverse Number print
+        long num = 123454321, i = 0;
+        long temp = num;
+        while (num != 0) {
+            long rem = num % 10;
+            i = i * 10 + rem;
+            num = num / 10;
+        }
+        //System.out.println(i);//Reverse no print
+        if (temp == i) {
+            System.out.println("It is palandrom no");
+        } else {
+            System.out.println("Not a palandrom");
+        }
+          */
+
+        /*
+        Swap Two Number using 3 veriable and using without using third Veriable
+        int a=10,b=20,c;
+//        a=a+b;
+//        b=a-b;
+//        a=a-b;
+//        System.out.println("a ="+a+" b= "+b);
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("a ="+a+" b= "+b);
+         */
+
 
     }
+
 }
-
-
