@@ -16,7 +16,7 @@ public class Aditya {
     static int a;//0
     static String b;//null
     int c;//0
-//static method it is exicut before the main method at the time of classloading
+//Static block can be printed without main method
 // Without using main method static method exicuter
 //    static {
 //        System.out.println("aditya");
@@ -28,7 +28,18 @@ public class Aditya {
 //        Aditya aditya = new Aditya();
 //        System.out.println(aditya.c);
 //        System.out.println(aditya.x);
+        /*
+        //1 to 100 even number print
+        int n = 100;
+        System.out.print("All even number :");
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i+" ");
 
+            }
+        }
+
+         */
         /*
         int ageBoy = 21;
         int ageGirl = 18;
@@ -61,7 +72,7 @@ public class Aditya {
          */
 
         /*
-        //5 table print
+        //5 table print for loop
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a num");
         int num = sc.nextInt();
@@ -118,7 +129,7 @@ public class Aditya {
          */
 
         /*
-        //Switch Case using String
+        //Switch Case Using String
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter a alphabet");
 //        String a = sc.next();
@@ -133,6 +144,27 @@ public class Aditya {
             default:
                 System.out.println("Not Name");
         }
+         */
+
+        /*
+        //1 to 100 prime no print
+        int i = 0;
+        int num = 0;
+        String primeNumber = " ";
+
+        for (i = 1; i <= 100; i++) {
+            int counter = 0;
+            for (num = i; num >= 1; num--) {
+                if (i % num == 0) {
+                    counter = counter + 1;
+                }
+            }
+            if (counter == 2){
+                primeNumber = primeNumber + i +" ";
+            }
+        }
+        System.out.println("peime number");
+        System.out.print(primeNumber);
          */
 
         /*
@@ -217,8 +249,9 @@ public class Aditya {
         System.out.println("a="+a);
         System.out.println("b="+b);
          */
+
         /*
-        //Sum of series number
+        //Sum of series number using while
         int a = 12345, sumOfNumber = 0;
         System.out.println("Addition of  Number");
         while (true) {
@@ -233,7 +266,7 @@ public class Aditya {
         System.out.println(sumOfNumber);
 
          */
-        /*
+         /*
         //String method use
         String str = "00000hello";
         String str1 = " Aditya ";
@@ -257,12 +290,12 @@ public class Aditya {
         //Two string Join
         System.out.println(str4.concat(str5));
         System.out.println("===============");
+        System.out.println("String length print"+str5.length());
         //Reverse String Print
         for (int i = str5.length()-1;i>=0;i--){
             System.out.print(str5.charAt(i));
         }
-
-         */
+          */
 
         /*
         //Method OverLoading
@@ -358,7 +391,7 @@ public class Aditya {
          */
 
         /*
-        //Factorial NUmber
+        //Factorial NUmber for loop
         int i, fact = 1;
         for (i = 1; i <= 5; i++)
             fact = fact * i;
@@ -489,7 +522,7 @@ public class Aditya {
          */
 
         /*
-        //Single Dimentional Array
+        //Single Dimentional Array usig for loop
         int[] Arrays = {1, 2, 3, 4, 5, 6, 7, 8};
         for (int i = 0; i < Arrays.length; i++) {
             System.out.print(Arrays[i] + " ");
@@ -508,7 +541,7 @@ public class Aditya {
          */
 
         /*
-        //Muli Dimentional Array
+        //Multi Dimentional Array
         int[][] multiDimen = {{1,2,3}, {4,5,6}, {7,8,9}};
         for (int i = 0;i <= 2;i++){
             for (int j = 0;j <= 2; j++){
@@ -542,10 +575,10 @@ public class Aditya {
          */
 
         /*
-        //Palindrome Number or Not
+        //Palindrome Number or Not for loop
         int num = 121, i = 0,temp;
         temp = num;
-        for (; num != 0; ) {
+        while (num>0){
             int rem = num % 10;
             i = i * 10 + rem;
             num = num / 10;
@@ -555,10 +588,10 @@ public class Aditya {
         } else {
             System.out.println("Not Palindrome Number");
         }
-         */
+        */
 
         /*
-        //Sum of n natural number
+        //Sum of n natural number using for loop
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
         int num = sc.nextInt();
@@ -570,7 +603,7 @@ public class Aditya {
          */
 
         /*
-        //While loop to Print table
+        //While loop to Print table 2
         int a = 1,num = 2;
         while (a <= 10){
             System.out.println(a * num );
@@ -591,7 +624,7 @@ public class Aditya {
          */
 
         /*
-        //Addition N natural number user through input
+        //Addition N natural number user through input using array
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a size of array");
         int size = sc.nextInt();
@@ -608,7 +641,7 @@ public class Aditya {
         */
 
         /*
-        //ADDITION of element
+        //ADDITION of element using array
         int i, sum = 0;
         int arr[] = {10, 20, 30, 40, 50};
         for (i = 0; i < arr.length; i++) {
@@ -646,7 +679,7 @@ public class Aditya {
          */
 
         /*
-        //Position of index 9 no index 4
+        //Position of 9 no index 4
         int num[] = {4, 6, 3, 8, 9, 6};
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a element");
@@ -664,7 +697,7 @@ public class Aditya {
          */
 
         /*
-        //Maximum Element is print
+        //Maximum Element is print Array
         int a[] = {4, 7, 3, 9, 5, 8};
         int max = a[0];
         for (int i = 0; i < a.length; i++) {
@@ -686,7 +719,7 @@ public class Aditya {
          */
 
         /*
-        //Second last element print
+        //Second last element print in Array
         int arr[]={10,50,60,40,70};
         Arrays.sort(arr);
         System.out.println(arr[arr.length-2]);
@@ -713,7 +746,7 @@ public class Aditya {
         }
         System.out.println("second largest " + arr[1]);
         System.out.println("second smallest "+arr[arr.length-2]);
-         */
+        */
 
         /*
         //Array even odd print
@@ -732,28 +765,27 @@ public class Aditya {
             }
         }
          */
-        
+
         /*
-        //Sorting element in java
+        //Sorting element in java array using for loop Descending order
         int arr[] = {10, 30, 20, 50, 40};
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
+                if (arr[i] < arr[j]) {
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
                 }
             }
         }
-        for (int i = arr.length - 1; i >= 0; i--) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-
-          */
+         */
 
         /*
-        //Largest Element Print
+        //Largest Element Print Array
         int arr[] = {1, 2, 10, 4, 5};
         int largest = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -765,7 +797,7 @@ public class Aditya {
          */
 
         /*
-        //Duplicate Element Print
+        //Duplicate Element Print Array
         int arr[] = {1, 2, 3, 4, 5, 6, 6, 3, 2, 1};
         for (int i = 0; i < arr.length; i++) {
             for (int j = i+1; j < arr.length; j++) {
@@ -777,7 +809,7 @@ public class Aditya {
         }
          */
 
-         /*
+        /*
         //Copy All Elements of one array into another array
         int a[]={10,20,30,40};
         int b[]=new int[a.length];
@@ -789,10 +821,11 @@ public class Aditya {
             System.out.println(a[i]+" ");
         }
         System.out.println("Copy element print");
-        for (int i=0;i<b[i];i++){
+        for (int i=0;i<b.length;i++){
             System.out.println(b[i]+" ");
         }
          */
+
         /*
         //Array using multi dimentional
         int[][] twoDimen = new int[3][3];
@@ -811,7 +844,6 @@ public class Aditya {
         }
         System.out.println();
          */
-
         /*
         //Array List Print Using For Loop,While Loop(Iterato),For Each Loop
         List<Integer> arrayList = new ArrayList<>();
@@ -910,8 +942,8 @@ public class Aditya {
             }
         }
          */
-
         /*
+        //Linked list use method
         List<String> obj = new LinkedList<>();
         obj.add("Aditya");
         obj.add("kash");
@@ -942,11 +974,15 @@ public class Aditya {
         Collections.reverse(obj);
         System.out.println(obj);
         System.out.println("============");
+        for (int i=obj.size()-1;i>0;i--){
+            System.out.println(obj.get(i));
+        }
+        Collections.replaceAll(obj,"a","O");
+        System.out.println(obj);
          */
 
-
         /*
-        //String element 
+        //String element reverse print
         String str = "Aditya";
         int i;
         for (i = str.length();i > 0;i-- ){
@@ -955,6 +991,7 @@ public class Aditya {
          */
 
         /*
+        //using Hash map
         HashMap<String, Integer> value = new HashMap<>();
         value.put("Aditya", 1);
         value.put("Sanket", 2);
@@ -1006,7 +1043,98 @@ public class Aditya {
         System.out.println("a ="+a+" b= "+b);
          */
 
+        /*
+        //Count Total Number of Vowels and Consonant
+        int vCount = 0, cCount = 0;
+        String str = "This is a really simple sentence";
+        str = str.toLowerCase();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+                vCount++;
+            } else if (str.charAt(i)>='a'&&str.charAt(i)<='z') {
+                cCount++;
+            }
+        }
+        System.out.println("vCount = "+vCount);
+        System.out.println("cCount = "+cCount);
+
+        */
+
+        /*
+        //Array element add 2 position
+        int arr[]={10,20,30,40,50};
+        int pos = 3;
+        int element = 100;
+        for (int i= arr.length-1;i>=pos-1;i--){
+            arr[i] = arr[i - 1];
+        }
+        arr[pos - 1] = element;
+        for (int i=0;i< arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+
+         */
+        /*
+        //A replaceAll to K
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("R");
+        list.add("S");
+        list.add("V");
+        list.add("M");
+        Collections.replaceAll(list,"A","K");
+        System.out.println(list);
+
+         */
+        /*
+        //fibonacci Series
+        int i = 0, j = 1, k = 0, a;
+        System.out.print(i+" "+j);
+        for (a=2;a<10;a++){
+            k=i+j;
+            i=j;
+            j=k;
+            System.out.print(" "+k);
+        }
+         */
+
+        /*
+        //Remove element using input
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a num");
+        int element = sc.nextInt();
+        int arr[]={1,2,4,5,7,5,4,8,9};
+        for (int i=0;i< arr.length;i++){
+            if (element==arr[i]){
+                for (int j=i;j< arr.length-1;j++){
+                    arr[j]=arr[j + 1];
+                }
+            }
+        }
+        System.out.println("Remove Element");
+        for (int i=0;i< arr.length-1;i++){
+            System.out.print(" "+arr[i]);
+        }
+         */
+
+        /*
+        //String format print output: Aditya
+        char [] c={'A','d','i','t','y','a'};
+        String s = new String(c);//String is sequence of a character
+        System.out.println(s);
+         */
+
+        /*
+        //Vectore in java 
+        Vector<String> vec = new Vector<>();
+        vec.add("Aditya");
+        vec.add("Abhishek");
+        vec.add("Sanket");
+        vec.add("Abhishek");
+        vec.add(2,"Motewr");
+        System.out.println(vec);
+         */
+
 
     }
-
 }
