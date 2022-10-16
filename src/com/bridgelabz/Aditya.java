@@ -23,11 +23,13 @@ public class Aditya {
 //    }
 
     public static void main(String[] args) {
+        //int a = 10;//local variable
 //        System.out.println(a);
 //        System.out.println(b);
 //        Aditya aditya = new Aditya();
 //        System.out.println(aditya.c);
 //        System.out.println(aditya.x);
+        // System.out.println(a);//local variable not initialize defalt value
         /*
         //1 to 100 even number print
         int n = 100;
@@ -918,6 +920,7 @@ public class Aditya {
         System.out.println(s1.equals(s2));
         System.out.println(s1.equals(s3));
          */
+
         /*
         //Enter a no an stop loop
         Scanner sc = new Scanner(System.in);
@@ -1054,7 +1057,6 @@ public class Aditya {
             } else if (str.charAt(i)>='a'&&str.charAt(i)<='z') {
                 cCount++;
             }
-        }
         System.out.println("vCount = "+vCount);
         System.out.println("cCount = "+cCount);
 
@@ -1135,6 +1137,52 @@ public class Aditya {
         System.out.println(vec);
          */
 
+        /*
+        //Infinite time loop exicute
+        while (true) {
+            System.out.println("Hello");//stop loop screen square symbol click
+        }
+         */
+
+        /*
+        //Array use to search element Available or not
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Element");
+        int num = sc.nextInt();
+        int arr[] = {10, 20, 30, 40, 50};
+        for (int i = 0;i < arr.length; i++) {
+            if (num == arr[i]) {
+                System.out.println("Present element");
+            }
+        }
+         */
+
+        /*
+        //String reverse using StringBuilder class
+        String str = "Aditya";
+        StringBuilder str1 = new StringBuilder();
+        str1.append(str);
+        str1.reverse();
+        System.out.println(str1);
+         */
+
+        /*
+        //byte -> short -> char -> int -> long -> float -> double
+        //Type Casting In Java
+        int a = 20;
+        long b = a;
+        System.out.println(a);
+         */
+
+        /*
+        //Even Number Print Using for each loop
+        int arr[] = {10, 20, 30, 21, 44, 33, 77};
+        for (int i : arr) {
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+         */
 
     }
 }
